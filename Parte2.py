@@ -6,6 +6,7 @@ def create_email(nombre, apellido):
             Salida:
              como parametro de salida devuelve el correo electrónico que se crea con la inicial y las 5 primeras letras del apellido más el dominio del correo'''
     correo = nombre[0] + apellido[:5] + '@educacion.navarra.es'
-    return correo
+    
+    return correo.lower()
 
 create_email('Alejandro', 'Martinez')
